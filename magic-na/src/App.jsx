@@ -7,7 +7,7 @@ import Tarot from "./components/Tarot";
 import Guias from "./components/Guias";
 import DescubreTuArcano from "./components/DescubreTuArcano";
 import PagoDeGuias from "./components/PagoDeGuias";
-import NotFound from "./components/notFound";
+// import NotFound from "./components/notFound";
 //  -----------importacion de arcanos----------
 import ElMago from "./components/arcanos/el-mago/ElMago";
 import LaSacerdotisa from "./components/arcanos/la-sacerdotisa/LaSacerdotisa";
@@ -65,7 +65,7 @@ function App() {
     >
       <Box position="relative" zIndex="1" bg="transparent">
         <Routes>
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
