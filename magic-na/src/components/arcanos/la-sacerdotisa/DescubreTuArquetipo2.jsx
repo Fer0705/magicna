@@ -4,7 +4,7 @@ import Footer from "../../Footer";
 import { Link } from "react-router-dom";
 import PdfViewer from "../../PdfViewer";
 const DescubreTuArquetipo2 = () => {
-  const pdfUrl = "/src/pdfs/guiaArcanoLaSacerdotisa2-vg.pdf";
+  const pdfUrl = "/pdfs/guiaArcanoLaSacerdotisa2-vg.pdf";
 
   return (
     <Flex direction="column" minH="100vh">

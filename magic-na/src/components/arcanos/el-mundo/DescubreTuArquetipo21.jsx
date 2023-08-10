@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import PdfViewer from "../../PdfViewer";
 
 const DescubreTuArquetipo21 = () => {
-  const pdfUrl = "/src/pdfs/guiaArcanoElMundo21-vg.pdf";
+  const pdfUrl = "/pdfs/guiaArcanoElMundo21-vg.pdf";
 
   return (
     <Flex direction="column" minH="100vh">
