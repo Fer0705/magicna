@@ -2,9 +2,11 @@ import { Box, Text, Flex, Button } from "@chakra-ui/react";
 import Navbar from "../../Navbar";
 import Footer from "../../Footer";
 import { Link } from "react-router-dom";
-import pdf from "../../../pdfs/guiaArcanoElColgado12-vg.pdf";
+import PdfViewer from "../../PdfViewer";
 
 const DescubreTuArquetipo12 = () => {
+  const pdfUrl = "/src/pdfs/guiaArcanoElColgado12-vg.pdf";
+
   return (
     <Flex direction="column" minH="100vh">
       <Navbar />
@@ -18,17 +20,7 @@ const DescubreTuArquetipo12 = () => {
       >
         El Colgado - Descubre tu arquetipo
       </Text>
-      <Box p={[2, 4, 6, 8]}>
-        <Box mt={4}>
-          <iframe
-            src={pdf}
-            width="100%"
-            height="500px"
-            title="Visor PDF"
-            allowFullScreen
-          />
-        </Box>
-      </Box>
+      <PdfViewer pdfUrl={pdfUrl} />
 
       <Box textAlign="center" mt={4} p={[4, 8]} bg="rgba(255, 255, 255, 0.8)">
         <Text fontSize={["xl", "2xl", "2xl", "2xl"]} fontWeight="bold" mb={4}>
