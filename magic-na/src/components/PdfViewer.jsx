@@ -59,11 +59,20 @@ function PdfViewer({ pdfUrl }) {
 
   return (
     <Box p={4} display="flex" flexDirection="column" alignItems="center">
-      <Box display="flex" justifyContent="center" alignItems="center" mb={2}>
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mb={2}
+        bg="black" /* Fondo gris claro */
+        boxShadow="lg" /* Sombra */
+        borderRadius="lg" /* Bordes redondeados */
+        p={2}
+      >
         <Icon
           as={FaArrowAltCircleLeft}
           boxSize={arrowIconSize}
-          color="white"
+          color="gray"
           cursor="pointer"
           onClick={handlePreviousPage}
           visibility={pageNumber === 1 ? "hidden" : "visible"}
@@ -86,7 +95,7 @@ function PdfViewer({ pdfUrl }) {
         <Icon
           as={FaArrowAltCircleRight}
           boxSize={arrowIconSize}
-          color="white"
+          color="gray"
           cursor="pointer"
           onClick={handleNextPage}
           visibility={pageNumber === numPages ? "hidden" : "visible"}
