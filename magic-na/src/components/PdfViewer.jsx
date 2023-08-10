@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import {
   Box,
@@ -12,7 +13,12 @@ import {
   ModalBody,
   ModalFooter,
   Button,
+  Text,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
+import { CheckIcon } from "@chakra-ui/icons";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -64,9 +70,9 @@ function PdfViewer({ pdfUrl }) {
         justifyContent="center"
         alignItems="center"
         mb={2}
-        bg="black" /* Fondo gris claro */
-        boxShadow="lg" /* Sombra */
-        borderRadius="lg" /* Bordes redondeados */
+        bg="black"
+        boxShadow="lg"
+        borderRadius="lg"
         p={2}
       >
         <Icon
@@ -106,16 +112,65 @@ function PdfViewer({ pdfUrl }) {
       <Modal isOpen={showModal} onClose={handleCloseModal} isCentered>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>¡Obtén la guía completa!</ModalHeader>
+          <ModalHeader fontSize="xl" fontWeight="bold" color="purple.600">
+            ¡Desbloquea todo el conocimiento de tu Arcano de vida!
+          </ModalHeader>
           <ModalBody>
-            Descripción de los beneficios de la guía completa y opción para
-            comprar.
+            <Text fontSize="lg" fontWeight="bold" mb={4}>
+              ¡Lleva tu exploración al siguiente nivel!
+            </Text>
+            <Text fontSize="md" mb={4}>
+              Descubre los secretos detrás de tu arcano y desbloquea su
+              sabiduría para transformar tu vida:
+            </Text>
+            <List spacing={2} mb={4}>
+              <ListItem>
+                <ListIcon as={CheckIcon} color="green.500" />
+                Profundiza en su simbolismo y significado.
+              </ListItem>
+              <ListItem>
+                <ListIcon as={CheckIcon} color="green.500" />
+                Encuentra herramientas prácticas para aplicar la sabiduría de tu
+                arquetipo.
+              </ListItem>
+              <ListItem>
+                <ListIcon as={CheckIcon} color="green.500" />
+                Desentraña cómo influye en diferentes áreas de tu vida.
+              </ListItem>
+            </List>
+            <Text fontSize="md">
+              ¡Haz click en{" "}
+              <span
+                style={{
+                  color: "#9b5de5",
+                  fontWeight: "bold",
+                  fontStyle: "italic",
+                }}
+              >
+                Desbloquear la Guía Completa
+              </span>{" "}
+              para tu autodescubrimiento!
+            </Text>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="purple" mr={3} onClick={handleCloseModal}>
+
+          <ModalFooter justifyContent="center">
+            <Button
+              colorScheme="purple"
+              onClick={handleCloseModal}
+              variant="ghost"
+              mr={3}
+            >
               Cerrar
             </Button>
-            <Button colorScheme="green">Comprar</Button>
+            <Link to="/guias/descubretuarcano/descubretuarquetipo/formadepago">
+              <Button
+                colorScheme="green"
+                fontWeight="bold"
+                _hover={{ bgColor: "green.500" }}
+              >
+                ¡Desbloquear la Guía Completa!
+              </Button>
+            </Link>
           </ModalFooter>
         </ModalContent>
       </Modal>

@@ -22,16 +22,32 @@ const DescubreTuArquetipo22 = () => {
       </Text>
       <PdfViewer pdfUrl={pdfUrl} />
 
-      <Box textAlign="center" mt={4} p={[4, 8]} bg="rgba(255, 255, 255, 0.8)">
-        <Text fontSize={["xl", "2xl", "2xl", "2xl"]} fontWeight="bold" mb={4}>
-          ¡Has leído las 3 hojas gratis!
+      <Box
+        textAlign="center"
+        mt={4}
+        p={[4, 8]}
+        bgGradient="linear(to-b, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6))"
+        boxShadow="lg"
+        borderRadius="lg"
+      >
+        <Text
+          fontSize={["xl", "2xl", "2xl", "2xl"]}
+          fontWeight="bold"
+          mb={4}
+          color="purple.600"
+        >
+          ¡Has explorado las 3 páginas de muestra!
         </Text>
-        <Text fontSize={["md", "lg", "lg", "lg"]} mb={4}>
-          ¿Quieres obtener la guía completa?
+        <Text fontSize={["md", "lg", "lg", "lg"]} mb={4} color="gray.800">
+          ¿Listo para sumergirte en la guía completa?
         </Text>
         <Link to="/guias/descubretuarcano/descubretuarquetipo/formadepago">
-          <Button colorScheme="blue" size="lg">
-            Comprar guía completa
+          <Button
+            colorScheme="purple"
+            size="lg"
+            _hover={{ bgColor: "purple.700" }}
+          >
+            ¡Obtener la Guía Completa!
           </Button>
         </Link>
       </Box>
