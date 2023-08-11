@@ -139,7 +139,6 @@ function App() {
               alignItems={"center"}
               justifyContent={"center"}
               position={"absolute"}
-              top={"50%"}
               left={"50%"}
               thickness="4px"
               speed="0.65s"
