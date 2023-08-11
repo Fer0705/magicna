@@ -73,7 +73,7 @@ function PdfViewer({ pdfUrl }) {
         bg="black"
         boxShadow="lg"
         borderRadius="lg"
-        p={2}
+        p={4}
       >
         <Icon
           as={FaArrowAltCircleLeft}
@@ -82,7 +82,7 @@ function PdfViewer({ pdfUrl }) {
           cursor="pointer"
           onClick={handlePreviousPage}
           visibility={pageNumber === 1 ? "hidden" : "visible"}
-          mr={4}
+          mr={{ base: "1", md: "4", lg: "6" }}
           _hover={{ color: "#9b5de5" }}
         />
         <Box
