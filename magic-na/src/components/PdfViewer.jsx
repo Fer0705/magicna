@@ -105,7 +105,7 @@ function PdfViewer({ pdfUrl }) {
           cursor="pointer"
           onClick={handleNextPage}
           visibility={pageNumber === numPages ? "hidden" : "visible"}
-          ml={4}
+          ml={{ base: "2", md: "4", lg: "6" }}
           _hover={{ color: "#9b5de5" }}
         />
       </Box>
