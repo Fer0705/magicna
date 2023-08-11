@@ -53,6 +53,8 @@ import DescubreTuArquetipo19 from "./components/arcanos/el-sol/DescubreTuArqueti
 import DescubreTuArquetipo20 from "./components/arcanos/el-juicio/DescubreTuArquetipo20";
 import DescubreTuArquetipo21 from "./components/arcanos/el-mundo/DescubreTuArquetipo21";
 import DescubreTuArquetipo22 from "./components/arcanos/el-loco/DescubreTuArquetipo22";
+import MercadoPago from "./components/MercadoPago";
+import Cafecito from "./components/Cafecito";
 function App() {
   return (
     <Box
@@ -76,6 +78,14 @@ function App() {
           <Route
             path="/guias/descubretuarcano/descubretuarquetipo/formadepago"
             element={<PagoDeGuias />}
+          />
+          <Route
+            path="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago"
+            element={<MercadoPago />}
+          />
+          <Route
+            path="/guias/descubretuarcano/descubretuarquetipo/formadepago/cafecito"
+            element={<Cafecito />}
           />
           {/* --------ARCANOS--------- */}
           <Route path="/guias/descubretuarcano/elmago" element={<ElMago />} />

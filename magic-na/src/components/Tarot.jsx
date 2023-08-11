@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Flex, Text, Box, Image } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/react";
+import { Flex, Text, Box, Image, Link } from "@chakra-ui/react";
 const Tarot = () => {
   return (
     <Flex direction="column" minH="100vh">
@@ -19,7 +18,7 @@ const Tarot = () => {
       <Box p={2} textAlign="center" bg={"blackAlpha.800"} borderRadius={"5%"}>
         <Flex
           direction={{ base: "column-reverse", md: "row-reverse" }}
-          justifyContent="center" // Centra horizontalmente en pantallas grandes
+          justifyContent="center"
           alignItems="center"
           mx={{ base: 2, md: 0 }}
         >
@@ -28,10 +27,10 @@ const Tarot = () => {
             mt={{ base: 4, md: 0 }}
             flex={{ base: "1", md: "initial" }}
             display="flex"
-            justifyContent="center" // Centra horizontalmente la imagen
-            alignItems="center" // Centra verticalmente la imagen
-            minWidth="200px" // Ancho mínimo para evitar achicamiento
-            maxW="50%" // Ancho máximo para evitar que la imagen sea demasiado grande
+            justifyContent="center"
+            alignItems="center"
+            minWidth="200px"
+            maxW="50%"
           >
             <Image
               borderRadius="full"
@@ -83,10 +82,11 @@ const Tarot = () => {
             srcSet="https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x"
             src="https://cdn.cafecito.app/imgs/buttons/button_1.png"
             alt="Invitame un café en cafecito.app"
-            width="250" // Ajusta el ancho según tu preferencia
-            height="auto" // Permite que la altura se ajuste automáticamente
+            width="250"
+            height="auto"
           />
         </Link>
+        <Text color={"gray"}>Cada Cafecito equivale a una pregunta</Text>
       </Box>
       <Flex direction="column" flex={1}>
         {/* Empty flex para empujar el footer hacia abajo */}
