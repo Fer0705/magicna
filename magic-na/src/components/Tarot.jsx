@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Flex, Text, Box, Image, Link } from "@chakra-ui/react";
+import { Flex, Text, Box, Image, Link, Button } from "@chakra-ui/react";
 const Tarot = () => {
   return (
     <Flex direction="column" minH="100vh">
@@ -77,6 +77,7 @@ const Tarot = () => {
           target="_blank"
           display="inline-block"
           mt={10}
+          _hover={{ opacity: 0.8 }}
         >
           <img
             srcSet="https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x"
@@ -86,7 +87,25 @@ const Tarot = () => {
             height="auto"
           />
         </Link>
-        <Text color={"gray"}>Cada Cafecito equivale a una pregunta</Text>
+        <Text color={"gray"} mt={3}>
+          Cada Cafecito equivale a una pregunta
+        </Text>
+        <br />
+        <Button
+          as="a"
+          href="https://www.buymeacoffee.com/MagicNa"
+          target="_blank"
+          rel="noopener noreferrer"
+          colorScheme="yellow"
+          leftIcon={
+            <span role="img" aria-label="Coffee">
+              ☕️
+            </span>
+          }
+          style={{ fontSize: "20px", padding: "25px 33px" }}
+        >
+          Buy me a coffee
+        </Button>
       </Box>
       <Flex direction="column" flex={1}>
         {/* Empty flex para empujar el footer hacia abajo */}
