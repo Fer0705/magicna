@@ -33,9 +33,9 @@ const PagoLatam = () => {
             _hover={{ opacity: 0.8 }}
           >
             <Image
-              src="https://res.cloudinary.com/dldclv2km/image/upload/v1691707476/cafe_rzug0w.jpg"
+              src="https://res.cloudinary.com/dldclv2km/image/upload/c_scale,h_168,w_300/v1692120142/Cafecito-_jp4gk3.jpg"
               alt="Cafecito"
-              w="250px" // Ajusta el ancho según tu preferencia
+              w="280px" // Ajusta el ancho según tu preferencia
               h="auto" // Permite que la altura se ajuste automáticamente
               cursor="pointer"
               borderRadius="30px"
@@ -43,13 +43,13 @@ const PagoLatam = () => {
             />
           </Link>
           <Link
-            to="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago" // Cambia href a to
+            to="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago"
             rel="noopener noreferrer"
           >
             <Image
-              src="https://res.cloudinary.com/dldclv2km/image/upload/c_thumb,w_300,h_168,g_auto/v1691706110/mercadopago_xooinv.jpg"
+              src="https://res.cloudinary.com/dldclv2km/image/upload/v1692120440/mp_drj2x2.png"
               alt="Mercado Pago"
-              w="250px" // Ajusta el ancho según tu preferencia
+              w="280px" // Ajusta el ancho según tu preferencia
               h="auto" // Permite que la altura se ajuste automáticamente
               cursor="pointer"
               borderRadius="30px"

@@ -1,4 +1,12 @@
-import { Heading, VStack, Flex, Box, Text, Grid } from "@chakra-ui/react";
+import {
+  Heading,
+  VStack,
+  Flex,
+  Box,
+  Text,
+  Grid,
+  Divider,
+} from "@chakra-ui/react";
 // import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -32,7 +40,7 @@ const PagoRestoDelMundo = () => {
             href={buyMeACoffeeUrl}
             rel="noopener noreferrer"
             target="_blank"
-            style={{ textDecoration: "none" }} // Opcional: quitar subrayado del enlace
+            style={{ textDecoration: "none" }}
           >
             <Box
               maxW="sm"
@@ -41,13 +49,12 @@ const PagoRestoDelMundo = () => {
               overflow="hidden"
               boxShadow="md"
               p={4}
-              bg="#FFDD00"
-              textAlign="center" // Centrar contenido
-              transition="opacity 0.3s" // Transición suave de opacidad
-              _hover={{ opacity: 0.8 }} // Cambio de opacidad al hacer hover
+              bg="white"
+              textAlign="center"
+              transition="opacity 0.3s"
+              _hover={{ opacity: 0.8 }}
             >
               <Flex justifyContent="center" alignItems="center" mb={4}>
-                {/* Icono de taza de café */}
                 <Box
                   as="span"
                   role="img"
@@ -57,15 +64,18 @@ const PagoRestoDelMundo = () => {
                 >
                   ☕️
                 </Box>
-                {/* Texto del botón */}
-                <Text fontSize="lg" fontWeight="bold" color="#000000">
+                <Text
+                  fontSize={{ base: "2xl", md: "3xl" }}
+                  fontWeight="bold"
+                  color="#000"
+                >
                   Buy me a coffee
                 </Text>
               </Flex>
-              {/* Descripción */}
-              <Text fontSize="md" color="#000000">
-                Elige tu guía y realiza tu pago de forma segura para acceder a
-                contenido exclusivo.
+              <Divider />
+              <Text fontSize="md" color="#000" as="i">
+                Selecciona tu arcano de vida y realiza el pago de forma segura
+                para acceder a contenido exclusivo.
               </Text>
             </Box>
           </a>

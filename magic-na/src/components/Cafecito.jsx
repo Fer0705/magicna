@@ -47,14 +47,15 @@ const Cafecito = () => {
             </span>
             , tendrás la maravillosa oportunidad de apoyarme adquiriendo 5
             cafecitos, un gesto lleno de energía positiva que te abrirá las
-            puertas a la guía completa de tu arcano de vida. Pero eso no es
-            todo, después de tu generosa invitación, te pido que me dejes tu
-            correo electrónico. De esta manera, te haré llegar directamente a tu
-            bandeja de entrada toda la riqueza y sabiduría contenida en esta
-            guía. En sus páginas, descubrirás secretos y consejos profundamente
+            puertas a la guía completa de tu arcano de vida. Ten en cuenta que
+            cuando estes realizando el pago por la pagina de cafecito, debes
+            completar el campo de contacto con tu correo electrónico y el campo
+            de mensajes con tu fecha de nacimiento. De esta manera, te haré
+            llegar directamente por email la guía personalizada de tu arcano de
+            vida. En sus páginas, descubrirás secretos y consejos profundamente
             enraizados en el tarot, desbloqueando un portal de conocimiento que
-            te empoderará en tu camino espiritual. ¿Te sientes listo para
-            disfrutar de un café mágico? Simplemente haz click en{" "}
+            te empoderará en tu camino espiritual. ¿Te sientes listo?
+            Simplemente haz click en{" "}
             <span
               style={{
                 color: "#9b5de5",

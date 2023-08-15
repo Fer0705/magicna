@@ -71,6 +71,9 @@ const Tarot = () => {
             descubriremos el poder que el tarot puede tener en tu vida.
           </Text>
         </Flex>
+        <Text color={"gray"} mt={6}>
+          Cada Cafecito equivale a una pregunta
+        </Text>
         <Link
           href="https://cafecito.app/magicna"
           rel="noopener noreferrer"
@@ -88,7 +91,7 @@ const Tarot = () => {
           />
         </Link>
         <Text color={"gray"} mt={3}>
-          Cada Cafecito equivale a una pregunta
+          LATAM (Argentina, México, Chile, Perú, Uruguay, Colombia, Brasil)
         </Text>
         <br />
         <Button
@@ -106,6 +109,9 @@ const Tarot = () => {
         >
           Buy me a coffee
         </Button>
+        <Text color={"gray"} mt={3}>
+          Resto del mundo
+        </Text>
       </Box>
       <Flex direction="column" flex={1}>
         {/* Empty flex para empujar el footer hacia abajo */}
