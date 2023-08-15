@@ -59,7 +59,7 @@ const PagoRestoDelMundo = () => {
                   as="span"
                   role="img"
                   aria-label="Coffee"
-                  fontSize="2xl"
+                  fontSize="4xl"
                   mr={2}
                 >
                   ☕️
