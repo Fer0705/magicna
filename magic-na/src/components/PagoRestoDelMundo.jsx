@@ -65,9 +65,10 @@ const PagoRestoDelMundo = () => {
                   ☕️
                 </Box>
                 <Text
-                  fontSize={{ base: "2xl", md: "3xl" }}
+                  fontSize={{ base: "4xl", md: "5xl" }}
                   fontWeight="bold"
                   color="#000"
+                  fontFamily={"'Dancing Script', cursive"}
                 >
                   Buy me a coffee
                 </Text>
