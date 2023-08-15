@@ -1,4 +1,4 @@
-import { Heading, VStack, Flex, Image, Grid } from "@chakra-ui/react";
+import { Heading, VStack, Flex, Text, Box, Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -19,6 +19,9 @@ const PagoDeGuias = () => {
         >
           Forma de pago
         </Heading>
+        <Text fontSize="2xl" color="white">
+          ¿Donde te encuentras?
+        </Text>
         <Grid
           templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
           gap={12}
@@ -26,31 +29,45 @@ const PagoDeGuias = () => {
           align="center"
           mt={{ base: "1", md: "10" }}
         >
-          <Link
-            to="/guias/descubretuarcano/descubretuarquetipo/formadepago/cafecito" // Cambia href a to
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://res.cloudinary.com/dldclv2km/image/upload/v1691707476/cafe_rzug0w.jpg"
-              alt="Cafecito"
-              w="250px" // Ajusta el ancho según tu preferencia
-              h="auto" // Permite que la altura se ajuste automáticamente
+          <Link to="/guias/descubretuarcano/descubretuarquetipo/formadepago/latam">
+            <Box
+              p={6}
+              bg={"#3c096c"}
+              borderRadius="lg"
+              boxShadow="md"
+              textAlign="center"
               cursor="pointer"
-              borderRadius="30px"
-            />
+              m={2}
+              border={"1px solid white"}
+              _hover={{ opacity: 0.8 }}
+            >
+              <Heading as="h3" fontSize="xl" color={"white"}>
+                LATAM
+              </Heading>
+              <Text mt={2} color={"white"}>
+                (Argentina, Brasil, Chile, Colombia, México, Perú, Uruguay)
+              </Text>
+            </Box>
           </Link>
-          <Link
-            to="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago" // Cambia href a to
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://res.cloudinary.com/dldclv2km/image/upload/c_thumb,w_300,h_168,g_auto/v1691706110/mercadopago_xooinv.jpg"
-              alt="Mercado Pago"
-              w="250px" // Ajusta el ancho según tu preferencia
-              h="auto" // Permite que la altura se ajuste automáticamente
+          <Link to="/guias/descubretuarcano/descubretuarquetipo/formadepago/restodelmundo">
+            <Box
+              p={6}
+              borderRadius="lg"
+              boxShadow="md"
+              textAlign="center"
               cursor="pointer"
-              borderRadius="30px"
-            />
+              m={2}
+              bg={"#3c096c"}
+              border={"1px solid white"}
+              _hover={{ opacity: 0.8 }}
+            >
+              <Heading as="h3" fontSize="xl" color={"white"}>
+                Resto del Mundo
+              </Heading>
+              <Text mt={2} color={"white"}>
+                Explora en otras regiones
+              </Text>
+            </Box>
           </Link>
         </Grid>
       </VStack>

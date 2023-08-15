@@ -9,6 +9,8 @@ const Tarot = lazy(() => import("./components/Tarot"));
 const Guias = lazy(() => import("./components/Guias"));
 const DescubreTuArcano = lazy(() => import("./components/DescubreTuArcano"));
 const PagoDeGuias = lazy(() => import("./components/PagoDeGuias"));
+const PagoLatam = lazy(() => import("./components/PagoLatam"));
+const PagoRestoDelMundo = lazy(() => import("./components/PagoRestoDelMundo"));
 //  -----------importacion de arcanos----------
 const ElMago = lazy(() => import("./components/arcanos/el-mago/ElMago"));
 const LaSacerdotisa = lazy(() =>
@@ -162,6 +164,14 @@ function App() {
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago"
               element={<PagoDeGuias />}
+            />
+            <Route
+              path="/guias/descubretuarcano/descubretuarquetipo/formadepago/latam"
+              element={<PagoLatam />}
+            />
+            <Route
+              path="/guias/descubretuarcano/descubretuarquetipo/formadepago/restodelmundo"
+              element={<PagoRestoDelMundo />}
             />
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago"
