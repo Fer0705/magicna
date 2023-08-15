@@ -1,4 +1,5 @@
-import { Heading, VStack, Flex, Image, Link, Grid } from "@chakra-ui/react";
+import { Heading, VStack, Flex, Image, Grid } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -26,7 +27,7 @@ const PagoDeGuias = () => {
           mt={{ base: "1", md: "10" }}
         >
           <Link
-            href="/guias/descubretuarcano/descubretuarquetipo/formadepago/cafecito"
+            to="/guias/descubretuarcano/descubretuarquetipo/formadepago/cafecito" // Cambia href a to
             rel="noopener noreferrer"
           >
             <Image
@@ -39,7 +40,7 @@ const PagoDeGuias = () => {
             />
           </Link>
           <Link
-            href="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago"
+            to="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago" // Cambia href a to
             rel="noopener noreferrer"
           >
             <Image
