@@ -197,20 +197,20 @@ const DescubreTuArcano = () => {
           href="/guiaConoceTuArcano1.pdf"
           download
           size="lg"
-          fontSize={"2xl"}
+          fontSize={{ base: "xl", md: "2xl" }}
           borderRadius="8px"
           cursor="pointer"
           color="white"
           fontWeight="bold"
-          boxShadow="0 8px 20px rgba(0, 0, 0, 0.25)" // Agregamos una sombra para el efecto de elevación
-          background="linear-gradient(-45deg, #e81cff, #40c9ff)" // Definimos el gradiente como fondo
-          transition="transform 0.3s, filter 0.3s" // Agregamos transiciones para los efectos hover
+          boxShadow="0 8px 20px rgba(0, 0, 0, 0.25)"
+          background="linear-gradient(-45deg, #e81cff, #40c9ff)"
+          transition="transform 0.3s, filter 0.3s"
           _hover={{
-            transform: "translateY(-5px)", // La tarjeta se moverá hacia arriba al hacer hover
-            filter: "brightness(1.2)", // Aumentamos el brillo al hacer hover
+            transform: "translateY(-5px)",
+            filter: "brightness(1.2)",
           }}
           _active={{
-            transform: "scale(0.95)", // Reducimos el tamaño del botón al hacer clic
+            transform: "scale(0.95)",
           }}
         >
           Descarga tu guía gratuita
@@ -228,7 +228,7 @@ const DescubreTuArcano = () => {
                   key={tarjeta.id}
                   position="relative"
                   width="190px"
-                  height="100%" // Hacemos que la altura sea 100% para adaptarse a la imagen
+                  height="100%"
                   backgroundColor="#000"
                   display="flex"
                   flexDirection="column"
@@ -237,9 +237,9 @@ const DescubreTuArcano = () => {
                   borderRadius="8px"
                   cursor="pointer"
                   boxShadow="md"
-                  transition="transform 0.3s" // Agregamos una transición para suavizar el movimiento
+                  transition="transform 0.3s"
                   _hover={{
-                    transform: "translateY(-10px)", // La tarjeta se moverá hacia arriba al hacer hover
+                    transform: "translateY(-10px)",
                     "&::before": {
                       transform: "rotate(-90deg) scaleX(1.34) scaleY(0.77)",
                     },
@@ -253,8 +253,8 @@ const DescubreTuArcano = () => {
                       bgImage={`url(${tarjeta.imagen})`}
                       bgSize="cover"
                       bgPosition="center"
-                      h="100%" // Ajustamos la altura de la imagen al 100%
-                      borderRadius="8px" // Ajustamos el borde para que se ajuste a la carta
+                      h="100%"
+                      borderRadius="8px"
                     />
                   </AspectRatio>
                   <Box>
@@ -267,9 +267,6 @@ const DescubreTuArcano = () => {
                     >
                       {tarjeta.titulo}
                     </Text>
-                    <Text fontSize="14px" color="#e81cff" fontWeight="600">
-                      {/* Agrega aquí el contenido adicional (si lo hay) */}
-                    </Text>
                   </Box>
                   <Box
                     content=""
@@ -277,8 +274,8 @@ const DescubreTuArcano = () => {
                     inset="0"
                     left="-5px"
                     margin="auto"
-                    width="calc(100% + 10px)" // Ajustamos el tamaño del fondo del gradiente
-                    height="calc(100% + 10px)" // Ajustamos el tamaño del fondo del gradiente
+                    width="calc(100% + 10px)"
+                    height="calc(100% + 10px)"
                     borderRadius="10px"
                     background="linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%)"
                     zIndex="-10"

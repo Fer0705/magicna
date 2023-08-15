@@ -12,7 +12,7 @@ const Home = () => {
       image:
         "https://res.cloudinary.com/dldclv2km/image/upload/v1690505725/fondo-universo_495832-909_hprapz.jpg", // Reemplaza con la URL de la imagen
       route: "/guias",
-      bgColor: "blue.500", // Puedes cambiar el color de fondo aquí
+      bgColor: "blue.500",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const Home = () => {
       image:
         "https://res.cloudinary.com/dldclv2km/image/upload/v1690505781/fondo-espacio_128650-2107_tiaamd.jpg", // Reemplaza con la URL de la imagen
       route: "/tarot",
-      bgColor: "blue.500", // Puedes cambiar el color de fondo aquí
+      bgColor: "blue.500",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Home = () => {
       image:
         "https://res.cloudinary.com/dldclv2km/image/upload/v1690505822/fondo-pantalla-nebulosa-galaxia-universo-colorido-como-concepto-espacio-exterior_786587-2625_xahkku.jpg", // Reemplaza con la URL de la imagen
       route: "/blog",
-      bgColor: "blue.500", // Puedes cambiar el color de fondo aquí
+      bgColor: "blue.500",
     },
   ];
 

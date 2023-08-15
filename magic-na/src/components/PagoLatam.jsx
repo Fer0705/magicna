@@ -35,8 +35,8 @@ const PagoLatam = () => {
             <Image
               src="https://res.cloudinary.com/dldclv2km/image/upload/c_scale,h_168,w_300/v1692120142/Cafecito-_jp4gk3.jpg"
               alt="Cafecito"
-              w="280px" // Ajusta el ancho según tu preferencia
-              h="auto" // Permite que la altura se ajuste automáticamente
+              w="280px"
+              h="auto"
               cursor="pointer"
               borderRadius="30px"
               _hover={{ opacity: 0.9 }}
@@ -49,8 +49,8 @@ const PagoLatam = () => {
             <Image
               src="https://res.cloudinary.com/dldclv2km/image/upload/v1692120440/mp_drj2x2.png"
               alt="Mercado Pago"
-              w="280px" // Ajusta el ancho según tu preferencia
-              h="auto" // Permite que la altura se ajuste automáticamente
+              w="280px"
+              h="auto"
               cursor="pointer"
               borderRadius="30px"
               _hover={{ opacity: 0.9 }}

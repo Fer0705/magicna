@@ -149,7 +149,7 @@ const MercadoPago = () => {
 
         <Box
           flex="1"
-          maxW={{ base: "100%", md: "800px" }} // Ajustar el ancho máximo en pantallas grandes
+          maxW={{ base: "100%", md: "800px" }}
           mx="auto"
           w={{ base: "100%", md: "auto" }}
           bg={useColorModeValue("gray.50", "gray.700")}

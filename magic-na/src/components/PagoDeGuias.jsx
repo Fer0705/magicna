@@ -42,12 +42,12 @@ const PagoDeGuias = () => {
               _before={{
                 content: "''",
                 position: "absolute",
-                inset: "-4px", // Ajusta el tamaño del fondo del gradiente
-                left: "-8px", // Ajusta el tamaño del fondo del gradiente
-                top: "-6px", // Ajusta el tamaño del fondo del gradiente
+                inset: "-4px",
+                left: "-8px",
+                top: "-6px",
                 margin: "auto",
-                width: "calc(100% + 16px)", // Ajusta el tamaño del fondo del gradiente
-                height: "calc(100% + 12px)", // Ajusta el tamaño del fondo del gradiente
+                width: "calc(100% + 16px)",
+                height: "calc(100% + 12px)",
                 borderRadius: "10px",
                 background: "linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%)",
                 zIndex: "-10",
@@ -58,12 +58,12 @@ const PagoDeGuias = () => {
                 content: "''",
                 zIndex: "-1",
                 position: "absolute",
-                inset: "-8px", // Ajusta el tamaño del fondo del gradiente en el hover
+                inset: "-8px",
                 background: "linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%)",
                 transform: "translate3d(0, 0, 0) scale(0.95)",
                 filter: "blur(20px)",
-                width: "calc(100% + 16px)", // Ajusta el tamaño del fondo del gradiente en el hover
-                height: "calc(100% + 12px)", // Ajusta el tamaño del fondo del gradiente en el hover
+                width: "calc(100% + 16px)",
+                height: "calc(100% + 12px)",
               }}
               _hover={{
                 _after: {
@@ -97,12 +97,12 @@ const PagoDeGuias = () => {
               _before={{
                 content: "''",
                 position: "absolute",
-                inset: "-4px", // Ajusta el tamaño del fondo del gradiente
-                left: "-8px", // Ajusta el tamaño del fondo del gradiente
-                top: "-6px", // Ajusta el tamaño del fondo del gradiente
+                inset: "-4px",
+                left: "-8px",
+                top: "-6px",
                 margin: "auto",
-                width: "calc(100% + 16px)", // Ajusta el tamaño del fondo del gradiente
-                height: "calc(100% + 12px)", // Ajusta el tamaño del fondo del gradiente
+                width: "calc(100% + 16px)",
+                height: "calc(100% + 12px)",
                 borderRadius: "10px",
                 background: "linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%)",
                 zIndex: "-10",
@@ -113,12 +113,12 @@ const PagoDeGuias = () => {
                 content: "''",
                 zIndex: "-1",
                 position: "absolute",
-                inset: "-8px", // Ajusta el tamaño del fondo del gradiente en el hover
+                inset: "-8px",
                 background: "linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%)",
                 transform: "translate3d(0, 0, 0) scale(0.95)",
                 filter: "blur(20px)",
-                width: "calc(100% + 16px)", // Ajusta el tamaño del fondo del gradiente en el hover
-                height: "calc(100% + 12px)", // Ajusta el tamaño del fondo del gradiente en el hover
+                width: "calc(100% + 16px)",
+                height: "calc(100% + 12px)",
               }}
               _hover={{
                 _after: {
