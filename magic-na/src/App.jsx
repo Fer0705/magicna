@@ -152,199 +152,261 @@ function App() {
           }
         >
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/tarot" element={<Tarot />} />
-            <Route path="/guias" element={<Guias />} />
+            <Route path="/" exact element={<LandingPage />} />
+            <Route path="/home" exact element={<Home />} />
+            <Route path="/blog" exact element={<Blog />} />
+            <Route path="/tarot" exact element={<Tarot />} />
+            <Route path="/guias" exact element={<Guias />} />
             <Route
               path="/guias/descubretuarcano"
+              exact
               element={<DescubreTuArcano />}
             />
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago"
+              exact
               element={<PagoDeGuias />}
             />
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago/latam"
+              exact
               element={<PagoLatam />}
             />
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago/restodelmundo"
+              exact
               element={<PagoRestoDelMundo />}
             />
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago/mercadopago"
+              exact
               element={<MercadoPago />}
             />
             <Route
               path="/guias/descubretuarcano/descubretuarquetipo/formadepago/cafecito"
+              exact
               element={<Cafecito />}
             />
             {/* --------ARCANOS--------- */}
-            <Route path="/guias/descubretuarcano/elmago" element={<ElMago />} />
+            <Route
+              path="/guias/descubretuarcano/elmago"
+              exact
+              element={<ElMago />}
+            />
             <Route
               path="/guias/descubretuarcano/lasacerdotisa"
+              exact
               element={<LaSacerdotisa />}
             />
             <Route
               path="/guias/descubretuarcano/laemperatriz"
+              exact
               element={<LaEmperatriz />}
             />
             <Route
               path="/guias/descubretuarcano/elemperador"
+              exact
               element={<ElEmperador />}
             />
             <Route
               path="/guias/descubretuarcano/elsacerdote"
+              exact
               element={<ElSacerdote />}
             />
             <Route
               path="/guias/descubretuarcano/losenamorados"
+              exact
               element={<LosEnamorados />}
             />
             <Route
               path="/guias/descubretuarcano/elcarro"
+              exact
               element={<ElCarro />}
             />
             <Route
               path="/guias/descubretuarcano/lafuerza"
+              exact
               element={<LaFuerza />}
             />
             <Route
               path="/guias/descubretuarcano/elermitanio"
+              exact
               element={<ElErmitaño />}
             />
             <Route
               path="/guias/descubretuarcano/laruedadelafortuna"
+              exact
               element={<RuedaFortuna />}
             />
             <Route
               path="/guias/descubretuarcano/lajusticia"
+              exact
               element={<LaJusticia />}
             />
             <Route
               path="/guias/descubretuarcano/elcolgado"
+              exact
               element={<ElColgado />}
             />
             <Route
               path="/guias/descubretuarcano/lamuerte"
+              exact
               element={<LaMuerte />}
             />
             <Route
               path="/guias/descubretuarcano/latemplanza"
+              exact
               element={<LaTemplanza />}
             />
             <Route
               path="/guias/descubretuarcano/eldiablo"
+              exact
               element={<ElDiablo />}
             />
             <Route
               path="/guias/descubretuarcano/latorre"
+              exact
               element={<LaTorre />}
             />
             <Route
               path="/guias/descubretuarcano/laestrella"
+              exact
               element={<LaEstrella />}
             />
-            <Route path="/guias/descubretuarcano/laluna" element={<LaLuna />} />
-            <Route path="/guias/descubretuarcano/elsol" element={<ElSol />} />
+            <Route
+              path="/guias/descubretuarcano/laluna"
+              exact
+              element={<LaLuna />}
+            />
+            <Route
+              path="/guias/descubretuarcano/elsol"
+              exact
+              element={<ElSol />}
+            />
             <Route
               path="/guias/descubretuarcano/eljuicio"
+              exact
               element={<ElJuicio />}
             />
             <Route
               path="/guias/descubretuarcano/elmundo"
+              exact
               element={<ElMundo />}
             />
-            <Route path="/guias/descubretuarcano/elloco" element={<ElLoco />} />
+            <Route
+              path="/guias/descubretuarcano/elloco"
+              exact
+              element={<ElLoco />}
+            />
             {/* -------------Guías---------------- */}
             <Route
               path="/guias/descubretuarcano/elmago/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo1 />}
             />
             <Route
               path="/guias/descubretuarcano/lasacerdotisa/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo2 />}
             />
             <Route
               path="/guias/descubretuarcano/laemperatriz/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo3 />}
             />
             <Route
               path="/guias/descubretuarcano/elemperador/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo4 />}
             />
             <Route
               path="/guias/descubretuarcano/elsacerdote/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo5 />}
             />
             <Route
               path="/guias/descubretuarcano/losenamorados/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo6 />}
             />
             <Route
               path="/guias/descubretuarcano/elcarro/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo7 />}
             />
             <Route
               path="/guias/descubretuarcano/lafuerza/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo8 />}
             />
             <Route
               path="/guias/descubretuarcano/elermitaño/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo9 />}
             />
             <Route
               path="/guias/descubretuarcano/laruedadelafortuna/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo10 />}
             />
             <Route
               path="/guias/descubretuarcano/lajusticia/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo11 />}
             />
             <Route
               path="/guias/descubretuarcano/elcolgado/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo12 />}
             />
             <Route
               path="/guias/descubretuarcano/lamuerte/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo13 />}
             />
             <Route
               path="/guias/descubretuarcano/latemplanza/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo14 />}
             />
             <Route
               path="/guias/descubretuarcano/eldiablo/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo15 />}
             />
             <Route
               path="/guias/descubretuarcano/latorre/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo16 />}
             />
             <Route
               path="/guias/descubretuarcano/laestrella/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo17 />}
             />
             <Route
               path="/guias/descubretuarcano/laluna/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo18 />}
             />
             <Route
               path="/guias/descubretuarcano/elsol/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo19 />}
             />
             <Route
               path="/guias/descubretuarcano/eljuicio/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo20 />}
             />
             <Route
               path="/guias/descubretuarcano/elmundo/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo21 />}
             />
             <Route
               path="/guias/descubretuarcano/elloco/descubretuarquetipo"
+              exact
               element={<DescubreTuArquetipo22 />}
             />
           </Routes>
