@@ -1,46 +1,46 @@
 /* eslint-disable react/prop-types */
 import {
   Heading,
-  VStack,
-  Grid,
+  // VStack,
+  // Grid,
   Box,
-  Link,
+  // Link,
   Text,
-  HStack,
-  List,
-  ListIcon,
-  ListItem,
-  useColorModeValue,
-  Icon,
+  // HStack,
+  // List,
+  // ListIcon,
+  // ListItem,
+  // useColorModeValue,
+  // Icon,
   Flex,
-  Divider,
+  // Divider,
 } from "@chakra-ui/react";
-import {
-  BsFill1CircleFill,
-  BsFill2CircleFill,
-  BsFill3CircleFill,
-  BsFill4CircleFill,
-  BsFill5CircleFill,
-} from "react-icons/bs";
+// import {
+//   BsFill1CircleFill,
+//   BsFill2CircleFill,
+//   BsFill3CircleFill,
+//   BsFill4CircleFill,
+//   BsFill5CircleFill,
+// } from "react-icons/bs";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { SiMercadopago } from "react-icons/si";
-function PriceWrapper({ children }) {
-  return (
-    <Box
-      mb={4}
-      shadow="base"
-      borderWidth="1px"
-      alignSelf="center"
-      borderColor={useColorModeValue("gray.200", "gray.500")}
-      borderRadius={"xl"}
-      mt={2}
-      ml={{ base: "none", md: "30", lg: "100" }}
-    >
-      {children}
-    </Box>
-  );
-}
+// import { SiMercadopago } from "react-icons/si";
+// function PriceWrapper({ children }) {
+//   return (
+//     <Box
+//       mb={4}
+//       shadow="base"
+//       borderWidth="1px"
+//       alignSelf="center"
+//       borderColor={useColorModeValue("gray.200", "gray.500")}
+//       borderRadius={"xl"}
+//       mt={2}
+//       ml={{ base: "none", md: "30", lg: "100" }}
+//     >
+//       {children}
+//     </Box>
+//   );
+// }
 
 const MercadoPago = () => {
   return (
@@ -57,7 +57,12 @@ const MercadoPago = () => {
       >
         Forma de pago
       </Heading>
-      <Grid
+      <Box>
+        <Text mt={50} color={"white"} align={"center"} fontSize={"2xl"}>
+          Contactate a magica.natu@gmail.com{" "}
+        </Text>
+      </Box>
+      {/* <Grid
         templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
         gap={1}
         justifyContent="center"
@@ -187,7 +192,10 @@ const MercadoPago = () => {
             </Text>
           </Box>
         </Box>
-      </Grid>
+      </Grid> */}
+      <Flex direction="column" flex={1}>
+        {/* Empty flex para empujar el footer hacia abajo */}
+      </Flex>
       <Footer />
     </Flex>
   );
